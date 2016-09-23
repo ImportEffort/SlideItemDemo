@@ -67,6 +67,7 @@ public class LeftRecyclerAdapter extends RecyclerView.Adapter<LeftRecyclerAdapte
                 }
             });
         }
+
     }
 
     OnItemSelectListener listener;
