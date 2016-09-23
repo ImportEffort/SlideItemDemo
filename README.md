@@ -48,4 +48,7 @@
    holder.tv_item.setTextColor(position == selectPosition ? Color.WHITE : Color.BLACK);
    ```
 
- ![默认展示第一条数据](默认展示第一条数据.png)
+ 
+
+![默认展示第一条数据.png](https://ooo.0o0.ooo/2016/09/23/57e529acb6cc7.png)
+
