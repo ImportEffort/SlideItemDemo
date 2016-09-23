@@ -1,4 +1,4 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.zheteng.wsj.studysavainstance.R;
+import com.zheteng.wsj.studysavainstance.adapter.LeftRecyclerAdapter;
+import com.zheteng.wsj.studysavainstance.entry.LeftItem;
+
 import java.util.ArrayList;
 
 /**
@@ -18,7 +23,7 @@ public class LeftFragment extends Fragment {
 
     private RecyclerView mLeftView;
     private ArrayList<LeftItem> mItems;
-    private ALeftRecyclerAdapter mAdapter;
+    private LeftRecyclerAdapter mAdapter;
 
     @Nullable
     @Override
@@ -38,8 +43,9 @@ public class LeftFragment extends Fragment {
         mLeftView.setLayoutManager(layoutManager);
         //准备数据
         prepareData();
-        mAdapter = new ALeftRecyclerAdapter(mItems);
-        mAdapter.setOnItemSelectListener(new ALeftRecyclerAdapter.OnItemSelectListener() {
+        mAdapter = new LeftRecyclerAdapter(mItems);
+        //设置RecyclerView条目点击事件
+        mAdapter.setOnItemSelectListener(new LeftRecyclerAdapter.OnItemSelectListener() {
             @Override
             public void onItemSelect(Object obj) {
                 int seclection = (int) obj;
@@ -47,6 +53,7 @@ public class LeftFragment extends Fragment {
             }
         });
         mLeftView.setAdapter(mAdapter);
+        //设置默认选中第一项
         mLeftView.post(new Runnable() {
             @Override
             public void run() {

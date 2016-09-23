@@ -1,4 +1,4 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.zheteng.wsj.studysavainstance.R;
+import com.zheteng.wsj.studysavainstance.adapter.RightRecycerAdpater;
+import com.zheteng.wsj.studysavainstance.entry.RightItem;
 
 import java.util.ArrayList;
 

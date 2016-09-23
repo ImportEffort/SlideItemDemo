@@ -1,4 +1,4 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.adapter;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
@@ -7,18 +7,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.zheteng.wsj.studysavainstance.R;
+import com.zheteng.wsj.studysavainstance.entry.LeftItem;
+
 import java.util.ArrayList;
 
 /**
  * Created by wsj20 on 2016/9/23.
  */
 
-public class ALeftRecyclerAdapter extends RecyclerView.Adapter<ALeftRecyclerAdapter.ViewHoler> {
+public class LeftRecyclerAdapter extends RecyclerView.Adapter<LeftRecyclerAdapter.ViewHoler> {
 
     private ArrayList<LeftItem> mItems;
     private int selectPosition;
 
-    public ALeftRecyclerAdapter(ArrayList<LeftItem> items) {
+    public LeftRecyclerAdapter(ArrayList<LeftItem> items) {
         mItems = items;
     }
 
@@ -31,6 +34,7 @@ public class ALeftRecyclerAdapter extends RecyclerView.Adapter<ALeftRecyclerAdap
     @Override
     public void onBindViewHolder(ViewHoler holder, int position) {
         holder.tv_item.setText(mItems.get(position).item);
+        //根据条目效果切换条目背景和文字颜色
         holder.tv_item.setBackgroundColor(position == selectPosition ? holder.itemView.getResources().getColor(R.color.colorPrimary) : Color.WHITE);
         holder.tv_item.setTextColor(position == selectPosition ? Color.WHITE : Color.BLACK);
     }

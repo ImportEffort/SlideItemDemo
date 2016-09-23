@@ -1,7 +1,9 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.adapter;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.zheteng.wsj.studysavainstance.R;
+import com.zheteng.wsj.studysavainstance.entry.RightItem;
 
 import java.util.List;
 

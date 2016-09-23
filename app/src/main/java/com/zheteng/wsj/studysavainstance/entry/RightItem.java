@@ -1,4 +1,4 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.entry;
 
 /**
  * Created by wsj20 on 2016/9/22.

@@ -1,10 +1,14 @@
-package com.zheteng.wsj.studysavainstance;
+package com.zheteng.wsj.studysavainstance.ui.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
+
+import com.zheteng.wsj.studysavainstance.R;
+import com.zheteng.wsj.studysavainstance.ui.fragment.LeftFragment;
+import com.zheteng.wsj.studysavainstance.ui.fragment.RightFragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
